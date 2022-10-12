@@ -1,0 +1,37 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add cors express body-parser dotenv
+
+PATH: 
+  C:\Program Files\PowerShell\7-preview;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\PostgreSQL\14\bin;C:\Program Files\Go\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\PowerShell\7-preview\preview;C:\Users\muham\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\muham\AppData\Local\Programs\Python\Python310\;C:\Users\muham\AppData\Local\Microsoft\WindowsApps;C:\Users\muham\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\muham\AppData\Roaming\npm;C:\Users\muham\AppData\Local\Programs\mongosh\;D:\Apps\Heroku-cli\heroku\bin;C:\Users\muham\go\bin;C:\Users\muham\AppData\Local\Yarn\bin;C:\Users\muham\AppData\Local\GitHubDesktop\bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.14.2
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)
+
+npm manifest: 
+  {
+    "name": "klinik-husada-karya",
+    "version": "1.0.0",
+    "repository": "https://github.com/ajierizaldi/Klinik-Husada-Karya.git",
+    "author": "Muhammad Ajie Rizaldi <ajiemuhammad2@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+      "start": "node index.js",
+      "dev": "nodemon index.js"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
