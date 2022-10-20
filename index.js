@@ -4,18 +4,17 @@ const app = express();
 const port = process.env.PORT || 3000;
 const bodyParser = require('body-parser');
 const cors = require('cors');
-// const router = require('./router');
+const router = require('./router');
 const ejs = require('ejs');
 
-app.use('view engine', 'ejs');
+app.set('views', 'views');
+app.set('view engine', 'ejs');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 app.use(cors());
-// app.use('/', router);
 
-// tampilkan halaman utama index.ejs
-// app.get('/', (req, res) => {
+app.use('/', router);
 //     res.render('index');
 // });
 
