@@ -1,30 +1,45 @@
 const express = require('express');
 const router = express.Router();
 
-// route obat
-const medicineRoute = require('./medicineRoute');
-// route pasien
+// const medicineRoute = require('./medicineRoute');
 // const patientRoute = require('./patientRoute');
-// // route admin
 // const userRoute = require('./userRoute');
+
 
 // main dashboard
 router.get('/', (req, res) => {
-    res.render('index');
+    res.render('pages/index');
 });
 
-// route login
+// login page
 router.get('/login', (req, res) => {
     res.render('pages/login');
+});
+
+// medicine page
+router.get('/medicine', (req, res) => {
+    res.render('pages/medicinePage');
+});
+
+// patient page
+router.get('/patient', (req, res) => {
+    res.render('pages/pasienPage');
+});
+
+// statistic page
+router.get('/statistic', (req, res) => {
+    res.render('pages/statisticPage');
 });
 
 // test api
 router.get('/check-health', (req, res) => {
     res.send('Server is running');
 })
-router.use('/medicine', medicineRoute);
-// router.use('/patient', patientRoute);
+
+// route login
 // router.use('/user', userRoute);
 
+// router.use('/medicine', medicineRoute);
+// router.use('/patient', patientRoute);
 
 module.exports = router;

@@ -1,5 +1,9 @@
 const express = require('express');
-const app = express.Router();
+const router = express.Router();
 
+// route login
+// router.get('/', (req, res) => {
+//     res.render('pages/login');
+// });
 
 module.exports = router;
