@@ -3,6 +3,10 @@
     background-color: #E8E8E8;
 }
 
+.sidebar-set {
+    margin-left: 10px;
+}
+
 .profile_1 {
     width: 67px;
 }
@@ -19,16 +23,3 @@
 }
 
 /* End Sidebar */
-
-.profile_2 {
-    width: 100px;
-}
-
-.profile-main {
-    padding-bottom: 33px;
-}
-
-.card-main {
-    width: 367px;
-    height: 126px;
-}
