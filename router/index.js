@@ -31,6 +31,11 @@ router.get('/statistic', (req, res) => {
     res.render('pages/statisticPage');
 });
 
+// profile page
+router.get('/profile', (req, res) => {
+    res.render('pages/profile');
+});
+
 // test api
 router.get('/check-health', (req, res) => {
     res.send('Server is running');

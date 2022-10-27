@@ -1,6 +1,24 @@
+/* Sidebar */
+.sidebar-color {
+    background-color: #E8E8E8;
+}
+
 .profile_1 {
     width: 67px;
 }
+
+.sidebar-name {
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.sidebar-line {
+    border: 2px solid black;
+    background-color: black;
+    display: block;
+}
+
+/* End Sidebar */
 
 .profile_2 {
     width: 100px;
