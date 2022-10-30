@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 /* Sidebar */
 .sidebar-color {
     background-color: #E8E8E8;

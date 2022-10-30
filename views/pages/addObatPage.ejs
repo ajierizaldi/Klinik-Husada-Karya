@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/partials_head') %> 
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <%- include('../partials/partials_navbar') %> 
+    </header>
+    
+    <main>
+        <!-- SideNav -->
+        <div class="row">
+            <%- include('../partials/partials_sidebar') %> 
+            <!-- End SideNav -->
+
+            <!-- Field -->
+            <div class="col-md-9">
+                <div class="container mb-5 mt-5">
+                    <h3><b>TAMBAH OBAT</b></h3>
+                    <form action="">
+                        <div class="mb-3 mt-3">
+                            <label for="medicine-name" class="form-label">Nama Obat:</label>
+                            <input type="text" class="form-control" id="medicine-name" placeholder="Masukkan Nama Obat" name="medicine-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exp" class="form-label">Tahun Kadaluwarsa:</label>
+                            <input type="number" class="form-control" id="exp" placeholder="Tahun Kadaluwarsa" name="exp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="medicine-qty" class="form-label">Jumlah:</label>
+                            <input type="number" class="form-control" id="medicine-qty" placeholder="Jumlah Obat" name="medicine-qty">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+          <!-- End Field -->
+    </main>
+
+    <!-- Footer -->
+    <%- include('../partials/partials_footer')  %> 
+    <!-- End Footer -->
+
+    <%- include('../partials/partials_bootstrapFoot') %> 
+</body>
+</html>

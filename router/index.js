@@ -21,9 +21,19 @@ router.get('/medicine', (req, res) => {
     res.render('pages/medicinePage');
 });
 
+// addMedicine Page
+router.get('/addMedicine', (req, res) => {
+    res.render('pages/addObatPage');
+});
+
 // patient page
 router.get('/patient', (req, res) => {
     res.render('pages/pasienPage');
+});
+
+// addPatient Page
+router.get('/addPatient', (req, res) => {
+    res.render('pages/addPasienPage');
 });
 
 // statistic page
