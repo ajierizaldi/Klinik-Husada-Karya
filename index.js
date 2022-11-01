@@ -15,8 +15,6 @@ app.use(express.static('public'));
 app.use(cors());
 
 app.use('/', router);
-//     res.render('index');
-// });
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);

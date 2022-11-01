@@ -1,39 +1,33 @@
 const express = require('express');
 const router = express.Router();
 
-// const medicineRoute = require('./medicineRoute');
-// const patientRoute = require('./patientRoute');
-// const userRoute = require('./userRoute');
-
-
-// main dashboard
-router.get('/', (req, res) => {
-    res.render('pages/index');
-});
+const medicineRoute = require('./medicineRoute');
+const patientRoute = require('./patientRoute');
+const userRoute = require('./userRoute');
 
 // login page
 router.get('/login', (req, res) => {
     res.render('pages/login');
 });
 
-// medicine page
-router.get('/medicine', (req, res) => {
-    res.render('pages/medicinePage');
-});
-
-// addMedicine Page
-router.get('/addMedicine', (req, res) => {
-    res.render('pages/addObatPage');
+// main dashboard
+router.get('/', (req, res) => {
+    res.render('pages/index');
 });
 
 // patient page
-router.get('/patient', (req, res) => {
-    res.render('pages/pasienPage');
-});
+router.use('/patient', patientRoute);
 
-// addPatient Page
+// addPasien page
 router.get('/addPatient', (req, res) => {
     res.render('pages/addPasienPage');
+});
+
+// medicine page
+router.use('/medicine', medicineRoute);
+
+router.get('/addMedicine', (req, res) => {
+    res.render('pages/addObatPage');
 });
 
 // statistic page
@@ -42,9 +36,7 @@ router.get('/statistic', (req, res) => {
 });
 
 // profile page
-router.get('/profile', (req, res) => {
-    res.render('pages/profile');
-});
+router.use('/profile', userRoute);
 
 // test api
 router.get('/check-health', (req, res) => {
